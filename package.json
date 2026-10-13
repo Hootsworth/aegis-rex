@@ -1,0 +1,26 @@
+{
+  "name": "aegis-rex",
+  "version": "1.0.0",
+  "description": "The Amber Protocol: Autonomous Defense-in-Depth Security & Safety Operating System for AI Agents",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node tests/aegis.test.js",
+    "bench": "node tests/extensive_benchmark.js"
+  },
+  "keywords": [
+    "ai-agent",
+    "security",
+    "guardrails",
+    "prompt-injection",
+    "paleo-reversion",
+    "amber-protocol",
+    "autonomous-agent",
+    "safety"
+  ],
+  "author": "Aditya Dixit",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

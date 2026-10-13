@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "nodeVersion": "v26.0.0",
+    "platform": "Darwin arm64",
+    "timestamp": "2026-10-13T16:34:58.807Z"
+  },
+  "synthetic": {
+    "layer1_ringGate": {
+      "iterations": 100000,
+      "totalDurationMs": "16.40",
+      "throughputOpsSec": 6099281,
+      "p50": "0.0001",
+      "p95": "0.0002",
+      "p99": "0.0005",
+      "avg": "0.0001"
+    },
+    "layer2_taintShield": {
+      "iterations": 20000,
+      "totalDurationMs": "62.94",
+      "throughputOpsSec": 317775,
+      "p50": "0.0031",
+      "p95": "0.0047",
+      "p99": "0.0080",
+      "avg": "0.0031"
+    },
+    "layer3_dualKeyInquisitor": {
+      "iterations": 50000,
+      "totalDurationMs": "9.50",
+      "throughputOpsSec": 5260620,
+      "p50": "0.0001",
+      "p95": "0.0002",
+      "p99": "0.0009",
+      "avg": "0.0002"
+    },
+    "layer4_amberSandbox": {
+      "snapshotCount": 1000,
+      "rollbackCount": 100,
+      "snapshotLatency": {
+        "p50": "0.0162",
+        "p95": "0.0318",
+        "p99": "0.0995",
+        "avg": "0.0210"
+      },
+      "rollbackLatency": {
+        "p50": "0.0425",
+        "p95": "0.1341",
+        "p99": "0.4882",
+        "avg": "0.0560"
+      }
+    },
+    "layer5_metabolicBrake": {
+      "iterations": 50000,
+      "totalDurationMs": "30.69",
+      "throughputOpsSec": 1629175,
+      "p50": "0.0004",
+      "p95": "0.0010",
+      "p99": "0.0018",
+      "avg": "0.0006"
+    },
+    "layer6_egressMask": {
+      "iterations": 30000,
+      "totalDurationMs": "11.43",
+      "throughputOpsSec": 2625725,
+      "p50": "0.0003",
+      "p95": "0.0005",
+      "p99": "0.0008",
+      "avg": "0.0003"
+    }
+  },
+  "realWorld": {
+    "scenarioA_autonomousRefactoring": {
+      "totalRounds": 50,
+      "successfulEdits": 47,
+      "corruptedAndCleanlyReverted": 3,
+      "codebaseIntegrityRate": "100.0%",
+      "totalDurationMs": "463.04",
+      "p50": "0.0496",
+      "p95": "53.2380",
+      "p99": "102.3049",
+      "avg": "9.2602"
+    },
+    "scenarioB_webIngestionShield": {
+      "pagesProcessed": 1000,
+      "threatsNeutralized": 750,
+      "totalDurationMs": "8.39",
+      "throughputPagesSec": 119235,
+      "p50": "0.0042",
+      "p95": "0.0131",
+      "p99": "0.0554",
+      "avg": "0.0083"
+    },
+    "scenarioC_fullPipelineTurn": {
+      "turnsEvaluated": 2000,
+      "totalDurationMs": "2.92",
+      "throughputTurnsSec": 684971,
+      "p50": "0.0010",
+      "p95": "0.0018",
+      "p99": "0.0066",
+      "avg": "0.0014"
+    }
+  },
+  "memory": {
+    "heapUsedBeforeMb": "13.78",
+    "heapUsedAfterMb": "24.85",
+    "heapUsedDeltaMb": "11.07",
+    "rssDeltaMb": "1.31",
+    "evaluations": 50000
+  }
+}
